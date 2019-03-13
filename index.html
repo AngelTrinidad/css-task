@@ -3,46 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <title>TODO List App</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <h1>Lista de Tareas</h1>
-        <p>
-            <label for="new-task">Nueva Tarea</label>
-            <input id="new-task" type="text"><button class="add">Agregar</button>
-        </p>
-
-        <h2>Lista de Tareas Pendientes</h2>
-        <ul id="incomplete-tasks">
-            <li>
-                <label>
-                    <input type="checkbox"/>
-                    Tarea 1
-                </label>
-                <button class="edit">Editar</button>
-                <button class="delete">Borrar</button>
-            </li>
-            <li>
-                <label>
-                    <input type="checkbox"/>
-                    Tarea 2
-                </label>
-                <button class="edit">Editar</button>
-                <button class="delete">Borrar</button></li>
-
-        </ul>
-
-        <h2>Lista de Tareas Completadas</h2>
-        <ul id="completed-tasks">
-            <li>
-                <label>
-                    <input type="checkbox" checked>
-                    Tarea 0
-                </label>
-                <button class="edit">Editar</button>
-                <button class="delete">Borrar</button>
-            </li>
-        </ul>
+        <div id="box-new-task">
+            <p>
+                <!--<label for="new-task">Nueva Tarea</label>-->
+                <input id="new-task" type="text" placeholder="Escribe una nueva tarea...">
+                <button class="add"><i class="material-icons">add</i></button>
+            </p>
+        </div>
+        <div id="box-incomplete-task">
+            <h2>Lista de Tareas Pendientes</h2>
+            <ul id="incomplete-tasks">
+                <li>
+                    <label class="task">
+                        <input type="checkbox"/>
+                        Tarea 1
+                    </label>
+                    <button class="edit"><i class="material-icons">edit</i></button>
+                    <button class="delete"><i class="material-icons">delete</i></button>
+                </li>
+                <li>
+                    <label class="task">
+                        <input type="checkbox"/>
+                        Tarea 2
+                    </label>
+                    <button class="edit"><i class="material-icons">edit</i></button>
+                    <button class="delete"><i class="material-icons">delete</i></button>
+                </li>
+    
+            </ul>
+        </div>
+        <div id="box-complete-task">
+            <h2>Lista de Tareas Completadas</h2>
+            <ul id="completed-tasks">
+                <li>
+                    <label class="task">
+                        <input type="checkbox" checked>
+                        Tarea 0
+                    </label>
+                    <button class="edit"><i class="material-icons">edit</i></button>
+                    <button class="delete"><i class="material-icons">delete</i></button>
+                </li>
+            </ul>
+        </div>
     </div>
 
 </body>
